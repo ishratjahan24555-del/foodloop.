@@ -1,0 +1,146 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(232, 255, 232);
+    margin: 0;
+}
+
+/* ---------- top bar ---------- */
+#nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(190, 255, 170);
+    height: 70px;
+    border-bottom: 2px solid white;
+    margin-bottom: 40px;
+}
+#nav b { background-color: rgb(190, 255, 170); }
+
+.logo {
+    text-decoration: none;
+    color: green;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.ex1 {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+/* ---------- login box ---------- */
+.login-box {
+    background-color: white;
+    border: 1px solid #dbe4d9;
+    border-radius: 10px;
+    padding: 24px;
+    width: 320px;
+    max-width: 90%;
+    margin: 40px auto;
+}
+.login-box h2 { margin-top: 0; text-align: center; color: green; }
+.login-box label { display: block; margin: 12px 0 4px; font-weight: bold; font-size: 14px; }
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.form-msg { color: red; font-weight: bold; min-height: 20px; }
+
+/* ---------- page ---------- */
+.container { max-width: 1000px; margin: auto; padding: 20px; }
+h1 { font-size: 36px; margin-bottom: 20px; }
+h2 { font-size: 22px; margin-top: 40px; margin-bottom: 14px; }
+
+.notice {
+    background-color: #dff3e6;
+    color: green;
+    font-weight: bold;
+    padding: 12px 16px;
+    border-radius: 10px;
+}
+.notice:empty { display: none; }
+
+/* ---------- stat cards ---------- */
+.stats { display: flex; gap: 16px; flex-wrap: wrap; }
+.stat-card {
+    background-color: white;
+    border: 1px solid #dbe4d9;
+    border-radius: 10px;
+    padding: 18px;
+    width: 160px;
+    font-size: 15px;
+}
+.stat-card b { display: block; font-size: 34px; color: green; }
+
+/* ---------- tables ---------- */
+.table-box {
+    background-color: white;
+    border: 1px solid #dbe4d9;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-x: auto;
+}
+table { width: 100%; border-collapse: collapse; background-color: white; }
+th { background-color: #dff3e6; text-align: left; padding: 12px; white-space: nowrap; }
+td { background-color: white; padding: 12px; border-top: 1px solid #dbe4d9; }
+.empty { color: gray; }
+
+/* ---------- badges ---------- */
+.status { padding: 3px 10px; border-radius: 10px; font-size: 13px; font-weight: bold; }
+.pending   { background-color: #fdf0cc; color: black; }
+.accepted  { background-color: #dff3e6; color: green; }
+.completed { background-color: green; color: white; }
+.rejected  { background-color: #f8d7d3; color: red; }
+.blocked   { background-color: #f8d7d3; color: red; }
+.active    { background-color: #dff3e6; color: green; }
+
+.tag { display: inline-block; font-size: 11px; font-weight: bold; padding: 2px 8px; border-radius: 10px; }
+.tag-free { background-color: #dff3e6; color: green; }
+.tag-sale { background-color: #fdf0cc; color: black; }
+
+/* ---------- buttons ---------- */
+.btn {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0e7a48;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+.btn:hover { background-color: green; }
+
+.mini {
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #0e7a48;
+    color: white;
+}
+.mini:hover { opacity: .85; }
+.mini.red { background-color: #c0392b; }
+
+/* ---------- footer ---------- */
+.site-footer {
+    background-color: #474747;
+    color: #c5d6ca;
+    text-align: center;
+    padding: 20px 16px;
+    margin-top: 48px;
+    font-size: 13px;
+}
+.site-footer p { margin: 0; }
+
+@media (max-width: 600px) {
+    .logo { font-size: 28px; }
+}
